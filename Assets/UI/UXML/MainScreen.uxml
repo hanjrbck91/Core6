@@ -1,11 +1,17 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/USS/TopContainer_USS.uss?fileID=7433441132597879392&amp;guid=fe3dd4f3d893f534c970cd09aab3e64f&amp;type=3#TopContainer_USS" />
+    <Style src="project://database/Assets/UI/USS/MainScreen.uss?fileID=7433441132597879392&amp;guid=77f429fa35423514c8753ab3e7ea447e&amp;type=3" />
     <engine:VisualElement name="MainContainer" style="flex-grow: 1; flex-direction: column; bottom: 0; left: 0; top: 0; right: 0; align-items: stretch; width: 100%; height: 100%;">
         <engine:VisualElement name="TopContainer" style="flex-grow: 1; height: auto; max-height: 0; min-height: 10%; -unity-background-scale-mode: stretch-to-fill; flex-direction: row;">
-            <engine:VisualElement name="Logo" style="flex-grow: 1; max-width: 0; min-width: 20%; background-image: url(&quot;project://database/Assets/UI/ICONS/ChatGPT%20Image%20Jun%2017,%202025,%2005_54_12%20PM.png?fileID=2800000&amp;guid=01b1a9a3f839f4a46b3478843e20dd9d&amp;type=3#ChatGPT Image Jun 17, 2025, 05_54_12 PM&quot;);" />
+            <engine:VisualElement name="Logo" style="flex-grow: 1; max-width: 0; min-width: 20%; background-image: url(&quot;project://database/Assets/UI/ICONS/ChatGPT%20Image%20Jun%2017,%202025,%2005_54_12%20PM.png?fileID=2800000&amp;guid=01b1a9a3f839f4a46b3478843e20dd9d&amp;type=3#ChatGPT Image Jun 17, 2025, 05_54_12 PM&quot;); padding-left: 10px; padding-right: 10px;" />
             <engine:VisualElement name="Logo" style="flex-grow: 1; max-width: 0; min-width: 80%; background-image: url(&quot;project://database/Assets/UI/ICONS/WhatsApp%20Image%202025-06-20%20at%2018.17.40_70a0d1f9.jpg?fileID=2800000&amp;guid=ea65bab59de13f646a47ca89fa1529f5&amp;type=3#WhatsApp Image 2025-06-20 at 18.17.40_70a0d1f9&quot;);" />
         </engine:VisualElement>
-        <engine:VisualElement name="RingContainer" style="flex-grow: 1; max-height: 0; min-height: 25%;" />
+        <engine:VisualElement name="RingContainer" style="flex-grow: 1; max-height: 0; min-height: 25%;">
+            <engine:VisualElement name="core-ring" style="flex-grow: 1; flex-direction: column;">
+                <engine:VisualElement name="ring-bg" style="flex-grow: 1;" />
+                <engine:VisualElement name="ring_progress" style="flex-grow: 1;" />
+                <engine:Label text="Label" name="ring_label" />
+            </engine:VisualElement>
+        </engine:VisualElement>
         <engine:ScrollView name="CardsScrollView" style="max-height: 0; min-height: 58%;" />
         <engine:VisualElement name="Footer" style="flex-grow: 1;" />
     </engine:VisualElement>
